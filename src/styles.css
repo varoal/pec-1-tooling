@@ -1,0 +1,326 @@
+:root {
+    --text-color: #333;
+    --accent-color: #ce1800;
+    --accent-light-color: #af4435;
+    --bg-body-color: #fdf5ef;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    min-width: 360px;
+    font-size: 18px;
+    color: var(--text-color);
+    background: var(--bg-body-color);
+    line-height: 1.4em;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2em;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.25rem;
+    letter-spacing: 1.4px;
+    font-weight: 900;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        letter-spacing: 0;
+    }
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+button
+ {
+    margin: 0;
+}
+
+/* responsive */
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* buttons */
+
+.btn {
+    background-color: var(--bg-body-color);
+    border: 1px solid var(--accent-color);
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+
+.info-box .btn:hover,
+.info-box .btn:focus {
+    background-color: var(--accent-light-color);
+    border: 1px solid var(--accent-color);
+    color:#fff;
+}
+
+
+/* header and nav */
+
+.header {
+    background-color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, .30);
+}
+
+.nav-main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-logo-img {
+    max-height: 35px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu .nav-item {
+    margin-right: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.nav-menu .nav-item.active {
+    color: var(--accent-color);
+}
+
+.nav-menu .nav-link {
+    color: var(--text-color);
+    padding: 5px 5px;
+    line-height: 1em;
+}
+
+.nav-menu .nav-link:hover {
+    color: var(--accent-color);
+}
+
+
+@media (max-width: 767px) {
+    .nav-logo {
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .nav-main .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-logo-img {
+        max-height: 54px;
+    }
+}
+
+/* Main */
+
+main {
+    padding-top: 100px;
+}
+
+main header {
+    margin-bottom: 25px;
+}
+
+@media (max-width: 767px) {
+    main header {
+        text-align: center;
+    }
+
+}
+
+.title {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* Inicio */
+
+.content-img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+}
+
+.info-box a {
+    font-weight: 900;
+    color: var(--accent-light-color);
+}
+
+.info-box a:hover {
+    font-weight: 900;
+    color: var(--accent-color);
+}
+
+/* Arquitectura */
+
+.architecture-info {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.architecture-info .info-box {
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
+.architecture-info .info-box p {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.architecture-info .img-container img {
+    max-width: 100%;
+}
+
+.arc-list {
+    list-style-type: disc;
+    margin: 20px;
+}
+.arc-list li{
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .architecture-info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .architecture-info .info-box {
+        padding-right: 40px;
+    }
+
+    .architecture-info>div {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .architecture-info .info-box {
+        padding-right: 70px;
+    }
+}
+
+/* Historia */
+
+.historia p {
+    text-align: justify;
+}
+
+/* Fuentes */
+
+.ref {
+    text-align: left;
+}
+
+.ref-list {
+    list-style-type: disc;
+    margin: 20px;
+}
+
+.ref-list li {
+    margin-bottom: 20px;
+}
+
+.ref-list p{
+   text-align: left;
+}
