@@ -6,7 +6,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="shortcut icon" href="./images/Catedral-Murcia-Cabildo-logo-web-500.png">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
     <script type="module" src="app.js"></script>
 </head>
 
@@ -15,8 +16,7 @@
         <nav class="nav-main">
             <div class="container">
                 <a class="nav-logo" href="index.html" title="Inicio">
-                    <img src="./images/Catedral-Murcia-Cabildo-logo-web-500.png" class="nav-logo-img"
-                        alt="Logo Catedral" />
+                    <img src="./images/Logo.png" class="nav-logo-img" alt="Logo Catedral" />
                 </a>
                 <ul class="nav-menu">
                     <li class="nav-item">
@@ -36,6 +36,16 @@
         </nav>
     </header>
     <main>
+        <picture>
+            <source media="(max-width: 766px)" srcset="./images/detalle-pano-cropped.290.png" />
+            <source media="(max-width: 766px)" srcset="./images/detalle-pano-cropped.625.png" />
+            <source media="(max-width: 998px)" srcset="./images/detalle-pano-cropped.705.png" />
+            <source media="(max-width: 955px)" srcset="./images/detalle-pano-cropped.705.png" />
+            <source media="(max-width: 1190px)" srcset="./images/detalle-pano-cropped.945.png" />
+            <source media="(max-width: 1514px)" srcset="./images/detalle-pano-cropped.1109.png" />
+            <source media="(min-width: 1515px)" srcset="./images/detalle-pano.jpg" />
+            <img src="./images/detalle-pano.jpg" alt="Chris standing up holding his daughter Elva" />
+        </picture>
         <div class="container">
             <section class="sections-info">
                 <div class="info-box">
@@ -121,11 +131,35 @@
                         <a href="historia.html" class="btn">Historia</a>
                     </div>
                     <div class="img-container">
-                        <img src="./images/Catedral-Murcia-museo-gotico-mural-virgen-misericordia-8x6.jpg" alt="Mural Virgen Misericordia" />
+                        <img src="./images/Catedral-Murcia-museo-gotico-mural-virgen-misericordia-8x6.jpg"
+                            alt="Mural Virgen Misericordia" />
                     </div>
                 </section>
             </div>
     </main>
+    <footer class="footer">
+        <nav class="nav-main">
+            <div class="container">
+                <a class="nav-logo" href="index.html" title="Inicio">
+                    <img src="./images/Logo.png" class="nav-logo-img" alt="Logo Catedral" />
+                </a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="arquitectura.html">Arquitectura</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catedral.html">Catedral</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fuentes.html">Fuentes</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
 </body>
 
 </html>

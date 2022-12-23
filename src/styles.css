@@ -70,8 +70,7 @@ a:hover {
     color: var(--accent-color);
 }
 
-button
- {
+button {
     margin: 0;
 }
 
@@ -127,7 +126,7 @@ button
 .info-box .btn:focus {
     background-color: var(--accent-light-color);
     border: 1px solid var(--accent-color);
-    color:#fff;
+    color: #fff;
 }
 
 
@@ -178,6 +177,22 @@ button
     color: var(--accent-color);
 }
 
+/* footer */
+
+.footer {
+    background-color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, .30);
+}
+
+footer a:hover {
+    opacity: 0.7;
+    color: var(--accent-color);
+}
+
 
 @media (max-width: 767px) {
     .nav-logo {
@@ -223,13 +238,63 @@ main header {
     position: relative;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 30px;
+}
+
+.main-title {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    animation: color-animation 5s linear infinite;
+}
+
+@keyframes color-animation {
+    0% {
+        color: #333;
+    }
+
+    50% {
+        color: #c52251;
+    }
+
+    100% {
+        color: #333;
+    }
 }
 
 /* Inicio */
 
 .content-img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 10px;
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+.content-img:hover {
+    transform: scale(1.05);
+    filter: brightness(0.8);
+}
+
+.content-img-main {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 10px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+.content-img-main:hover {
+    transform: scale(1.05);
+    filter: brightness(0.8);
+}
+
+.content-img-historia {
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -275,7 +340,8 @@ p {
     list-style-type: disc;
     margin: 20px;
 }
-.arc-list li{
+
+.arc-list li {
     margin-bottom: 20px;
 }
 
@@ -321,6 +387,13 @@ p {
     margin-bottom: 20px;
 }
 
-.ref-list p{
-   text-align: left;
+.ref-list p {
+    text-align: left;
+}
+
+/* extra */
+
+picture img {
+    display: block;
+    margin: auto;
 }
